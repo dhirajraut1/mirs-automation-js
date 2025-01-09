@@ -1,0 +1,24 @@
+{
+  "name": "MIRS Automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test --trace on",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen --load-storage=playwright/.auth/mirs-user.json https://mirsbosit.digitalmta.com/dashboard"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.5",
+    "dotenv": "^16.4.5"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.3.0"
+  }
+}
