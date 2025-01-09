@@ -1,5 +1,4 @@
 import test from "@playwright/test";
-import { UserPage } from "../../../pages/access-control/user/user.pom";
 
 test("User creation", async ({ page }) => {
   await page.goto("/login");
